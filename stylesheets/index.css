@@ -1,0 +1,120 @@
+:root {
+  --border-properties: 0.1rem solid #EEE;
+}
+
+*, *:before, *:after  {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #BBDEFB;
+}
+
+img.img-fluid {
+  width: 100%;
+  height: 100%;
+}
+
+.page {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+}
+
+.col-6 {
+  width: 49%;
+}
+
+.in-fl {
+  display: inline-flex;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.tc {
+  text-align: center;
+}
+
+.by {
+  border-top: var(--border-properties);
+  border-bottom: var(--border-properties);
+}
+
+.bt {
+  border-top: var(--border-properties);
+}
+
+.pt {
+  padding-top: 0.1rem;
+}
+
+.col-8 {
+  width: 66.66%
+}
+
+.col-4 {
+  width: 31%;
+}
+
+div.head-ed {
+  max-height: 100px;
+  display: flex;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.in-bl {
+  display: inline-block;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.mt {
+  margin-top: 1rem;
+}
+
+.my {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer.tc > span > a {
+  color: black;
+}
+
+header, main {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .page {
+    width: 50%;
+  }
+  section.experience {
+    flex: 1 0 45%;
+  }
+  section.ed, section.interests {
+    flex: 1 0 21%;
+    max-height: 250px;
+  }
+  section.page {
+    margin: 0 1rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
