@@ -3,27 +3,31 @@
   <head>
     <title>My Resume</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css"/>
   </head>
   <body>
-    <header>
-      <h1>Ricardo J. González C.</h1>
-      <address>
-        <p>223 Juana de Asbaje, Monterrey, N.L., México</p>
-        <p>+52 81 2039 0360</p>
-      </address>
-      <nav>
-        <a href="https://github.com/ricglz0201" target="_blank">Github</a>
-        <a href="http://linkedin.com/in/rjgcastillo/" target="_blank">LinkedIn</a>
-      </nav>
+    <header class="jc-center">
+      <div class="page">
+        <h2 class="tc">Ricardo J. González C.</h2>
+        <address class="by">
+          <div class="col-6 in-fl"><p>223 Juana de Asbaje, Monterrey, N.L., México</p></div>
+          <div class="col-6 in-fl"><p>+52 81 2039 0360</p></div>
+        </address>
+        <section>
+          <h4>Objective</h4>
+          <p>A full-stack web developer position in an international enterprise</p>
+        </section>
+        <nav class="bt pt">
+          <div class="col-6 in-fl jc-center"><a href="https://github.com/ricglz0201" target="_blank">Github</a></div>
+          <div class="col-6 in-fl jc-center"><a href="http://linkedin.com/in/rjgcastillo/" target="_blank">LinkedIn</a></div>
+        </nav>
+      </div>
     </header>
-    <main>
-      <section>
-        <p><strong>Objective</strong></p>
-        <p>A full-stack web developer position in an international enterprise</p>
-      </section>
-      <section>
-        <p><strong>Experience</strong></p>
-        <div>
+    <main class="jc-center ai-center">
+      <section class="page experience">
+        <h4 class="pd">Experience</h4>
+        <div class="by">
           <p>May - Aug 2019</p>
           <p><strong>Facebook Inc.</strong> - Software Engineer Intern</p>
           <p>
@@ -46,15 +50,19 @@
           </ol>
         </div>
       </section>
-      <section>
-        <p><strong>Education</strong></p>
-        <div>
-          <img src="https://experience.sap.com/designservices/wp-content/uploads/sites/2/2016/12/TDM-logo-3.jpg" alt="ITESM Logo" />
-          <p><strong>Tec de Monterrey, Campus Monterrey</strong>, 2017 - present</p>
-          <p>B.S. Computer Science And Technologies</p>
+      <section class="page ed">
+        <h4 class="m0 my">Education</h4>
+        <div class="head-ed ai-center">
+          <div class="in-bl col-8">
+            <p><strong>Tec de Monterrey, Campus Monterrey</strong>, 2017 - present</p>
+          </div>
+          <div class="in-bl col-4">
+            <img src="https://experience.sap.com/designservices/wp-content/uploads/sites/2/2016/12/TDM-logo-3.jpg" alt="ITESM Logo" class="img-fluid"/>
+          </div>
         </div>
+        <p>B.S. Computer Science And Technologies</p>
       </section>
-      <section>
+      <section class="page interests">
         <p><strong>Interests</strong></p>
         <ul>
           <li>Competitive programming</li>
@@ -65,7 +73,7 @@
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="tc mt">
       <span><a href="mailto:a01282829@itesm.mx">a01282829@itesm.mx</a></span>
     </footer>
   </body>
